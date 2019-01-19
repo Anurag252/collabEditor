@@ -1,0 +1,76 @@
+
+<script  type="text/javascript" src="client.js"></script>
+
+<style>
+  
+
+
+@media (min-width:320px)  { 
+    
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+body {
+    height: 480px;
+    width: 320px
+  }
+}
+
+
+
+@media (min-width:480px)  { 
+    
+/* smartphones, Android phones, landscape iPhone */ 
+body {
+    height: 480px;
+    width: 480px
+  }
+}
+
+
+@media (min-width:600px)  { 
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+body {
+    height: 800px;
+    width: 600px
+  }
+}
+
+
+@media (min-width:801px)  {
+ /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+ body {
+    height: 500px;
+    width: 801px
+  }
+ }
+
+
+@media (min-width:1025px) { 
+/* big landscape tablets, laptops, and desktops */ 
+body {
+    height: 500px;
+    width: 1025px
+  }
+}
+
+
+@media (min-width:1281px)
+{
+    body {
+    height: 500px;
+    width: 1281px
+  }
+}
+  
+
+</style>
+<body style="background-color: dimgray;">
+	<div style="background-color: brown;width: 100%;height: 10%;position: relative;left: 50px" >
+		<h1>Collaborate and Share</h1>
+	</div>
+	<div style="position: relative;width: 100%;left:50px;top:20px ">
+		<textarea onkeyup="broadcast()" style="border-radius:20px;position: relative;font-size: 28px; width: 100%;height: 80%;;"></textarea>
+	</div>
+	<div id="clickableDiv" onclick="clickedOnDiv()" style="background-color:darkcyan;width: 100%;top:30px;height: 10%;position: relative;left: 50px">
+		<h2 id="linkStatus" style="float: left;">Click to copy the link </h2>
+	</div>
+</body>
